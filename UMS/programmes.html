@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <title>Courses Offered</title>
+        <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="shortcut icon" type="image/png" href="images/WhatsApp Image 2023-08-10 at 9.25.16 AM.jpeg">
+
+        <style>
+
+            body
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin:1%;
+                padding:1%;
+                box-sizing: border-box;
+            }
+
+            #top
+            {
+                background-color:rgb(199, 2, 2);
+                display: flex;
+                width:100%;
+                height:10%;
+
+            }
+            #img
+            {
+                background-color: rgb(12, 2, 2);
+                float: inline-start;
+
+            }
+            #title
+            {
+                color:white;
+                float:inline-end;
+                padding:1.5%;
+            }
+
+
+            #out-cont
+            {
+                box-sizing: border-box;
+                width:100%;
+                padding:3%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "in1 in2 in3"
+                "in1 in4 in5";
+                justify-content: center;
+            }
+
+            #in1
+            {
+                padding:3%;
+                font-size:14px;
+                font-weight:bold;
+                border-radius:2rem;
+                grid-area: in1;
+                line-height:1.4rem;
+                border:2px solid yellow;
+            }
+
+            #in2
+            {
+                grid-area:in2;
+                margin-left: 3%;
+            }
+
+            #in3
+            {
+                grid-area:in3;
+            }
+
+            #in4
+            {
+                grid-area:in4;
+                margin-left: 3%;
+            }
+
+            #in5
+            {
+                grid-area:in5;
+            }
+
+            .in
+            {
+                padding:2%;
+                margin:1%;
+                font-weight:bold;
+                border-radius:1.5rem;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 12px;
+                border:1px solid rgb(6, 54, 113) ; 
+            }
+
+            img
+            {
+                width:100%;
+                height:60%;
+                text-align: center;
+            }
+
+            #pro
+            {
+                color:rgb(199, 2, 2) ;
+            }
+
+            #btt
+            {
+                background-color:rgb(199, 2, 2);
+                border:0;
+                padding:2%;
+                font-size:2rem;
+                font-weight:bold;
+                position:fixed;
+                /*display: none;*/
+                bottom:30px;
+                right:30px;
+                border-radius:3rem;
+                z-index: 99;
+                outline: none;
+                cursor:pointer;
+                color:white;
+            }
+
+            #btt:hover
+            {
+                background-color:rgba(0, 0, 0, 0.534);
+                border:1px solid black;
+            }
+
+            #footer
+            {
+                background-color:black ;
+                color:white;
+                padding-left:1%;
+                height:15%;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="top">
+            <div id="img"><img src="images\favicon.png" width="100%" height="70%"></div>
+            <div id="title">  SAMVEDA INSTITUTES</div>
+        </div>
+
+        <div id="out-cont">
+            <div id="in1">
+            <marquee><h1 id="pro">Programmes</h1></marquee>
+            <br>
+            <br>
+            <section id="s1">
+                <article id="art1">
+                At Samveda, all programmes have been carefully designed with focus on curricular and 
+                co-curricular activities, industry requirements, and career. The emphasis is on 
+                autonomous learning to enable the students chart their own course. 
+                Each programme is managed by experienced and caring faculty members who prepare 
+                students for a bright career, higher studies and research.
+                </article>
+                <br>
+                <br>
+                <article id="art2">
+                A unique mentoring scheme is in place at our institute, where, a faculty member is 
+                assigned to a group of students as a mentor. The mentor not only helps a student in 
+                making informed decisions about his academic progress, but also acts as a local guardian.
+                The students at VIT-AP are part of a digitised campus with e-wallet, Wifi, digital 
+                library, smart classrooms and much more. At present, VIT-AP offers the following 
+                programmes for students.
+                </article>
+            </section>
+        </div>
+        <div id="in2" class="in"><h3>B.TECH</h3><img src="https://vitap.ac.in/wp-content/uploads/2021/01/ma-scaled.jpg"><br>The Computer Science and Engineering programme at VIT-AP is a unique blend of hardware and software, allowing students to gain knowledge.</div>
+        <div id="in3" class="in"><h3>B.Sc</h3><img src="https://vitap.ac.in/wp-content/uploads/2021/01/Chemistry-Dept.jpg"><br>M.Sc. Physics in Collaboration with NoPo Nanotechnologies, India Pvt. Ltd. Merit Scholarships for PG Programmes Programmes Offered: ✥ MSc Physics (General) ✥ MSc</div>
+        <div id="in4" class="in"><h3>BBA</h3><img src="https://vitap.ac.in/wp-content/uploads/2023/02/2nd-Intra-Moot-Court-Competition-6.jpg"><br>VIT-AP offers a 5-year integrated Bachelor of Business Administration and Bachelor of Laws (BBA.,LL.B (Hons)) is a dual degree.</div>
+        <div id="in5" class="in"><h3>MBA</h3><img src="https://vitap.ac.in/wp-content/uploads/2020/07/995A1490.jpg"><br>About the Programme: To address the growing need of engineering talent with skills in digital technology, TCS, in partnership with leading academicians across India.</div>
+        <button id="btt" onclick="return topfunction();"><i class="fa fa-angle-up icon"></i></button>    
+    </div>
+
+    <div id="footer">
+        <h3>Contact Us</h3>
+
+    </div>
+
+    <script>
+        let a=document.getElementById("btt");
+
+        window.onscroll=function()
+        {
+            scrollfunction()
+        };
+
+        function scrollfunction()
+        {
+            if (document.body.scrollTop>20)
+            {
+                a.style.display="block";
+            }
+            else
+            {
+                a.style.display="none";
+            }
+        }
+
+        function topfunction()
+        {
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+    </body>
+</html>

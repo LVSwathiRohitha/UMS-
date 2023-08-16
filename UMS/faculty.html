@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>IGNITE UNIVERSITY</title>
+        <link rel="shortcut icon" type="image/png" href="images/WhatsApp Image 2023-08-10 at 9.25.16 AM.jpeg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #header {
+    background-color: rgb(199, 2, 2);
+    color: #fff;
+    padding: 10px;
+  }
+  #news-container {
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  #news-content {
+    padding: 10px;
+    animation: scrollNews 15s linear infinite;
+  }
+  @keyframes scrollNews {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+</style>
+</head>
+<body>
+  <div id="header">
+    <h1 style="text-align: center;">Faculty News</h1>
+    <p style="text-align: center;">We are proud of our dedicated faculty members!</p>
+  </div>
+  
+  <div id="news-container">
+    <div id="news-content">
+      <p><strong>Latest News:</strong></p>
+      <p>1. New research grant awarded to Physics Department.</p>
+      <p>2. Annual sports meet scheduled for next month.</p>
+      <p>3. Faculty member Dr. Smith receives award for outstanding teaching.</p>
+      <p>4. College ranked among top 10 in the country.</p>
+      <p>5. Registration open for upcoming coding workshop.</p>
+    </div>
+  </div>
+
+  <script>
+    // Stop news scrolling on hover
+    const newsContainer = document.getElementById('news-container');
+    newsContainer.addEventListener('mouseenter', () => {
+      document.getElementById('news-content').style.animation = 'none';
+    });
+
+    newsContainer.addEventListener('mouseleave', () => {
+      document.getElementById('news-content').style.animation = 'scrollNews 15s linear infinite';
+    });
+  </script>
+</body>
+</html>
